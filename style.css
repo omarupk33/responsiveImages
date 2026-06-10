@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'handWriting';
+  src: url('resource/Playwrite_AU_VIC_Guides/PlaywriteAUVICGuides-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    font-family: 'handWriting', sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: antiquewhite;
+    justify-content:space-between;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ background-color: chartreuse;   
+}
+
+main{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center;
+    text-align: center; */
+}
+
+footer{
+    background-color: cadetblue;
+}
+
+.footer-top-divider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img{
+    background-color: rgb(233, 167, 167);
+    border: 2px solid white;
+    border-radius: 100%;
+    min-width: 10vw;
+    min-height: 10vw;
+    text-align: center;
+    line-height: 10vw;
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin: 1vw;
+}
+
+.nav_list{
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+    font-weight: bolder;
+    list-style:none;
+    margin-right: 2vw;
+    
+}
+
+
+.footer_img{
+    background-color: rgb(233, 167, 167);
+    border: 2px solid white;
+    border-radius: 100%;
+    min-width: 10vw;
+    min-height: 10vw;
+    text-align: center;
+    line-height: 10vw;
+}
+
+#about{
+border: 1px solid orangered;
+display: flex;
+flex-direction: column;
+align-self: center;
+justify-content: center;
+align-items: center;
+max-width: 20vw;
+}
+.about-paragraph{
+max-width: 20vw;
+}
+
+
+#projects{
+display: grid;
+grid-template-rows: repeat( 3, 1fr);
+grid-template-columns: repeat(3, 1fr);
+gap:2vw;
+}
+
+.project-card{
+    border: 1px white solid;
+    max-width:fit-content;
+}
+
+#contact{
+    align-self: center;
+    margin-top: -10vw;
+}
