@@ -39,33 +39,43 @@ header{
 }
 
 main{
-    /* background-color: rgb(90, 15, 161); */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center;
-    text-align: center; */
+
 }
 
 footer{
+
  background-color: #C9ADA7;   
     /* box-shadow:  0 0 15px 5px rgba(255, 255, 255, 0.5); */
 }
 
 .footer-top-divider{
     display: flex;
+
     justify-content: space-between;
+    align-items: center;
 }
 
 img{
-    border: 2px solid white;
-    max-height: 20vw;
+    border: 2px solid rgb(253, 224, 224);
+    max-height: 15vw;
+    object-fit: contain;
 }
 
 
 h1, h2,h4, p, ul,.skill-content{
     font-family: 'handWriting', sans-serif;
-    color:white
+    color:white;
+    font-size: 3vw;
+
+}
+
+h3{
+    font-size: 2.5vw;
+
 }
 
 a, link{
@@ -76,19 +86,23 @@ a, link{
 
 a:hover, link:hover{
     color:#694f4a;
-    font-size: larger;
+    font-size: 2.5vw;
+
 }
 
 a:focus, link:focus{
     color:#694f4a;
     outline-width: solid 2px #694f4a;
-    font-size: larger;
+    font-size: 2.5vw;
 }
 
 p, li{
 font-family: 'handStyle', sans-serif;
 }
 
+a, p, li{
+font-size: 2vw;
+}
 
 .intro{
     display: flex;
@@ -100,7 +114,7 @@ font-family: 'handStyle', sans-serif;
 
 .nav_list{
     display: flex;
-    gap: 20px;
+    gap: 1vw;
     font-size: larger;
     font-weight: bolder;
     list-style:none;
@@ -110,21 +124,21 @@ font-family: 'handStyle', sans-serif;
 
 
 #about{
-/* border: 1px solid orangered; */
 display: flex;
-/* flex-direction: column; */
+flex-direction: column;
 align-self: center;
 justify-content: center;
 align-items: center;
-/* max-width: 20vw; */
 gap:2vw;
 }
 .about-paragraph{
-max-width: 20vw;
+max-width: 50vw;
 }
 
 .skill-content{
     display: flex;
+    align-items: center;
+    gap: 2vw;
 }
 
 #projects{
@@ -148,8 +162,7 @@ gap:2vw;
     max-width:fit-content;
     box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
     transform: transform 0.3s ease-in-out 0.3s,
-                box-shadow 0.3s ease-in-out 0.3s;
-
+    box-shadow 0.3s ease-in-out 0.3s;
 }
 
 .project-card:hover, .project-card:focus-visible {
@@ -190,3 +203,18 @@ gap:2vw;
     display: flex;
     justify-content: center;
 }
+
+
+/* @media (max-width: 768px){
+.projects-container{
+display: grid;
+width: 50vw;
+grid-template-rows: repeat( 3, 1fr);
+grid-template-columns: repeat(3, 1fr);
+
+}
+}
+
+@media (min-width: 1024px){
+
+} */
